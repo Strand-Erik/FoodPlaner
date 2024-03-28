@@ -1,0 +1,40 @@
+recipes = ["kyckling stroganoff", "tika masala", "chilli con carne", "curry", "thaigryta"]
+
+["kyckling stroganoff"]
+"kyckling" = "300 g"
+"lök" = "0.5 st"
+"grädde" = "1 dl"
+"tomatpure tub" = "0.5 st"
+"ris" = "75 g"
+
+["tika masala"]
+"kyckling" = "300 g"
+"ris" = "75 g"
+"naan" = "1 st"
+"masala mix paket" = "0.8 st"
+"gräddfil" = "2 dl"
+
+["chilli con carne"]
+"nötfärs" = "300 g"
+"krossade tomater" = "160 g"
+"bönor i tomatsås" = "160 g"
+"vitlöks klyftor" = "1 st"
+"lök" = "0.5 st"
+"jalapenos burkar" = "0.2 st"
+
+["curry"]
+"kyckling" = "300 g"
+"curry paste burkar" = "0.6 st"
+"bambuskott burkar" = "0.6 st"
+"kokosmjölk" = "250 ml"
+"ris" = "75 g"
+
+["thaigryta"]
+"kyckling" = "300 g"
+"kokosmjölk" = "160 ml"
+"soja" = "5 msk"
+"majs" = "100 g"
+"fond" = "0.5 msk"
+"ingefära" = "1 msk"
+"vitlöks klyftor" = "1 st"
+"ris" = "75 g"
