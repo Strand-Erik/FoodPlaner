@@ -30,9 +30,9 @@ class GroceryList:
 
     def subtract_recipe(self, recipe: Recipe, count: int = 1) -> None:
         for ingredient in recipe.ingredients:
-            if ingredient.name in self.glist:
-                subtractor = Ingredient(ingredient.name, ingredient.quantity*count, ingredient.unit)
-                self.glist[ingredient.name] -= subtractor
-                
-                if self.glist[ingredient.name] == 0:
-                    self.glist.pop(ingredient.name)
+            if not ingredient.name in self.glist: continue
+            subtractor = Ingredient(ingredient.name, ingredient.quantity*count, ingredient.unit)
+            self.glist[ingredient.name] -= subtractor
+            
+            if self.glist[ingredient.name] == 0:
+                self.glist.pop(ingredient.name)

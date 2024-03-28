@@ -1,6 +1,6 @@
 import pytest
 from src.models.main.ingredient import Ingredient
-from src.units.units import *
+from src.units.main.units import *
 
 
 @pytest.mark.parametrize("initial_quantity, initial_unit, expected_quantity, expected_unit", [

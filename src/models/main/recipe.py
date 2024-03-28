@@ -1,6 +1,6 @@
 from typing import Set, Dict, Any
 from src.models.main.ingredient import Ingredient
-from src.units.units import *
+from src.units.main.units import *
 
 class Recipe:
     def __init__(self, name: str, toml_map: Dict[str, Any]) -> None:
@@ -9,7 +9,7 @@ class Recipe:
 
 
     def _parse_ingredients(self, ingredient_data: Dict[str, Any]) -> Set[Ingredient]:
-        ingredients = set()
+        ingredients: Set[Ingredient] = set()
         for item, quantity in ingredient_data.items():
             item = item.lower()  # Ensure the ingredient name is in lowercase
             quantity = quantity.lower()  # Also convert quantity to lowercase to handle units correctly
