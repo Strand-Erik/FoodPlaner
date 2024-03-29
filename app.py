@@ -11,10 +11,10 @@ class App(ctk.CTk):
         ctk.set_appearance_mode('system')
 
         self.title('Recipe to Grocery List App')
-        self.geometry('800x600')
+        self.geometry('1300x800')
 
         tabs = ctk.CTkTabview(self)
-        tabs.pack(fill="both")
+        tabs.pack(expand=True, fill="both")
 
         # Creating tabs
         self.list_tab = tabs.add("List")
@@ -28,10 +28,10 @@ class App(ctk.CTk):
 
     def initialize_list_tab(self):
         self.recipe_chooser = RecipeChooserWidget(self.list_tab)
-        self.recipe_chooser.pack(side="left", fill="both", expand=True)
+        self.recipe_chooser.pack(side="left", fill="both", expand=True, padx=20)
 
         self.grocery_list = GroceryListWiget(self.list_tab)
-        self.grocery_list.pack(side="right", fill="both", expand=True)
+        self.grocery_list.pack(side="right", fill="both", expand=True, padx=20)
 
 if __name__ == "__main__":
     app = App()
