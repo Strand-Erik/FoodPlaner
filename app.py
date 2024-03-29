@@ -11,7 +11,7 @@ class App(ctk.CTk):
         ctk.set_appearance_mode('system')
 
         self.title('Recipe to Grocery List App')
-        self.geometry('1300x800')
+        self.geometry('1500x800')
 
         tabs = ctk.CTkTabview(self)
         tabs.pack(expand=True, fill="both")
