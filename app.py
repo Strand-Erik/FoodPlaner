@@ -7,6 +7,9 @@ from src.gui.wigets.recipe_chooser_widget import RecipeChooserWidget
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
+        ctk.set_default_color_theme("src/gui/themes/dark-blue.json")
+        ctk.set_appearance_mode('system')
+
         self.title('Recipe to Grocery List App')
         self.geometry('800x600')
 
