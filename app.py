@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import customtkinter as ctk
 from src.gui.wigets.grocery_list_wiget import GroceryListWiget
 from src.gui.wigets.recipe_chooser_widget import RecipeChooserWidget
