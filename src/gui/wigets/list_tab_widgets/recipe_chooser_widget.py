@@ -1,8 +1,9 @@
 import customtkinter as ctk
+from src.gui.wigets.list_tab_widgets.list_tab_model import ListTabModel
 from src.gui.wigets.list_tab_widgets.recipe_widget import RecipeWidget
 
 class RecipeChooserWidget(ctk.CTkFrame):
-    def __init__(self, parent):
+    def __init__(self, parent, model: ListTabModel):
         super().__init__(parent)
         self.title_font = ctk.CTkFont(family="Roboto", size=35)
         self.button_font = ctk.CTkFont(family="Roboto", size=25)

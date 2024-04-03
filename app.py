@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import customtkinter as ctk
-from src.gui.wigets.list_tab_widgets.list_tab_model import ListTabModel
+from src.gui.wigets.list_tab_widgets.list_tab import ListTab
 
 class App(ctk.CTk):
     def __init__(self):
@@ -24,7 +24,7 @@ class App(ctk.CTk):
         self.recipes_tab = self.tabs.add("Recipes")
         self.history_tab = self.tabs.add("History")
 
-        ListTabModel(self.list_tab)
+        ListTab(self.list_tab)
 
 
 if __name__ == "__main__":

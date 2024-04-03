@@ -1,8 +1,9 @@
 from typing import List
 import customtkinter as ctk
+from src.gui.wigets.list_tab_widgets.list_tab_model import ListTabModel
 
 class GroceryListWiget(ctk.CTkFrame):
-    def __init__(self, parent):
+    def __init__(self, parent, model: ListTabModel):
         super().__init__(parent)
         self.parent = parent
         self.title_font = ctk.CTkFont(family="Roboto", size=35)
