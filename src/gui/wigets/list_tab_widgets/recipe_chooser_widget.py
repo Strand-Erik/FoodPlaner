@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from src.gui.wigets.recipe_widget import RecipeWidget
+from src.gui.wigets.list_tab_widgets.recipe_widget import RecipeWidget
 
 class RecipeChooserWidget(ctk.CTkFrame):
     def __init__(self, parent):
